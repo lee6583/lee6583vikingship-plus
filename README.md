@@ -1,7 +1,7 @@
 ## Vikingship component library
 ## 使用 React+typescript 从零到一打造一套自己的组件库
 
-vikingship 组件库使用 React Hooks 和 typescript
+lee6583vikingship-plus 组件库使用 React Hooks 和 typescript
 
 
 
@@ -9,16 +9,16 @@ vikingship 组件库使用 React Hooks 和 typescript
 ### 安装最后已经发布的组件库来试试
 
 ~~~javascript
-npm install vikingship --save
+npm install lee6583vikingship-plus
 ~~~
 
 ### 使用
 
 ~~~javascript
 // 加载样式
-import 'vikingship/dist/index.css'
+import 'lee6583vikingship-plus/dist/index.css'
 // 引入组件
-import { Button } from 'vikingship'
+import { Button } from 'lee6583vikingship-plus'
 ~~~
 
 ### 亮点
