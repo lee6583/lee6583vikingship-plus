@@ -15,7 +15,7 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof Select>
+} as ComponentMeta<typeof Select>;
 
 export const ADefaultSelect = (args) => (
   <Select

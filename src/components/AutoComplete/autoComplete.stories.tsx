@@ -1,15 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { AutoComplete, DataSourceType } from './autoComplete'
-interface LakerPlayerProps {
-  value: string;
-  number: number;
-}
-interface GithubUserProps {
-  login: string;
-  url: string;
-  avatar_url: string;
-}
+import { AutoComplete } from './autoComplete'
 export default { 
   title: 'AutoComplete 组件',
   component: AutoComplete,
@@ -67,8 +58,8 @@ export const BCustomComplete = (args) => {
   const handleFetch = (query: string) => {
     return lakersWithNumber.filter(player => player.value.includes(query))
   }
-  const renderOption = (item: DataSourceType) => {
-    const itemWithNumber = item as DataSourceType<LakerPlayerProps>
+  const renderOption = (item: any) => {
+    const itemWithNumber = item as any
     return (
       <>
         <b>名字: {itemWithNumber.value}</b>
@@ -96,8 +87,8 @@ export const CAjaxComplete = (args) => {
       })
   }
 
-  const renderOption = (item: DataSourceType) => {
-    const itemWithGithub = item as DataSourceType<GithubUserProps>
+  const renderOption = (item: any) => {
+    const itemWithGithub = item as any
     return (
       <>
         <b>Name: {itemWithGithub.value}</b>

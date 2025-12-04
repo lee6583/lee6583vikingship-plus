@@ -9,7 +9,7 @@ export default {
   id: 'Tabs',
   component: Tabs,
   subcomponents: { 'TabItem': TabItem }
-} as ComponentMeta<typeof Tabs>
+} as ComponentMeta<typeof Tabs>;
 
 export const ADefaultTabs: ComponentStory<typeof Tabs> = (args) => (
   <Tabs {...args}>

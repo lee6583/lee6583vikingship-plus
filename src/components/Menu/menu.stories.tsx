@@ -7,7 +7,7 @@ export default {
   id: 'Menu',
   component: Menu,
   subcomponents: { 'SubMenu': Menu.SubMenu, 'Item': Menu.Item }
-} as ComponentMeta<typeof Menu>
+} as ComponentMeta<typeof Menu>;
 
 export const ADefaultMenu: ComponentStory<typeof Menu> = (args) => (
   <Menu defaultIndex='0' {...args} >

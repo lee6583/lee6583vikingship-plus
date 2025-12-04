@@ -8,7 +8,7 @@ export default {
   title: '第四章作业：Alert 组件',
   id: 'Alert',
   component: Alert,
-} as ComponentMeta<typeof Alert>
+} as ComponentMeta<typeof Alert>;
 
 const Template: ComponentStory<typeof Alert> = (args) => <Alert {...args} />
 

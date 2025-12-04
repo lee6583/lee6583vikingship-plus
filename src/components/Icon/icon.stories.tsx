@@ -7,7 +7,7 @@ export default {
   title: '第七章：Icon 组件',
   id: 'Icon',
   component: Icon,
-} as ComponentMeta<typeof Icon>
+} as ComponentMeta<typeof Icon>;
 export const ADefaultIcons = () => (
   <>
     <Icon icon="check" size="3x"/>

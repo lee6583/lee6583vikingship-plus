@@ -12,7 +12,7 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof Input>
+} as ComponentMeta<typeof Input>;
 
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />
 export const ADefault = Template.bind({})
