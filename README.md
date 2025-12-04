@@ -1,32 +1,29 @@
 ## Vikingship component library
-## 使用 React+typescript 从零到一打造一套你自己的组件库
+## 使用 React+typescript 从零到一打造一套自己的组件库
 
-[![Build Status](https://travis-ci.com/vikingmute/vikingship.svg?token=mHoDqxyxXWX5BSpu8L9y&branch=master)](https://travis-ci.com/vikingmute/vikingship)
+lee6583vikingship-plus 组件库使用 React Hooks 和 typescript
 
-vikingship 是为慕课网打造的一套教学组件库，使用 React Hooks 和 typescript
-意在让大家从零到一，由浅入深的提高自己的 React 和 typescript 水平，它的官网地址是
-[vikingship.xyz](http://vikingship.xyz)
+
 
 
 ### 安装最后已经发布的组件库来试试
 
 ~~~javascript
-npm install vikingship --save
+npm install lee6583vikingship-plus
 ~~~
 
 ### 使用
 
 ~~~javascript
 // 加载样式
-import 'vikingship/dist/index.css'
+import 'lee6583vikingship-plus/dist/index.css'
 // 引入组件
-import { Button } from 'vikingship'
+import { Button } from 'lee6583vikingship-plus'
 ~~~
 
-### 课程亮点
+### 亮点
 
 * 🔥typescript with React Hooks
-* 💧渐进式的教学过程，很多章后面都有扩展作业，引导同学们深入学习和掌握知识
 * ⛑️使用 react-testing-library 完成单元测试
 * 📚使用 storybook 本地调试和生成文档页面
 * 📚使用 react-doc-gen 自动生成文档
