@@ -15,7 +15,7 @@ export default {
       },
     }
   }
-} as ComponentMeta<typeof Upload>
+} as ComponentMeta<typeof Upload>;
 
 export const ASimpleUpload = (args) => (
   <Upload
