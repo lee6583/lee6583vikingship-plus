@@ -53,7 +53,9 @@
     "storybook": "BROWSER=none storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build-es": "rollup --config rollup/rollup.esm.config.js",
-    "build-umd": "rollup --config rollup/rollup.umd.config.js"
+    "build-umd": "rollup --config rollup/rollup.umd.config.js",
+    "netlify": "netlify",
+    "deploy:netlify": "npm run build-storybook && npx netlify deploy --prod --dir=storybook-static"
   },
   "husky": {
     "hooks": {
