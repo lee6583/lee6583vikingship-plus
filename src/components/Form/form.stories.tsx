@@ -11,7 +11,7 @@ const meta: ComponentMeta<typeof Form> ={
   title: '第十一章:Form 组件',
   id: 'Form',
   component: Form,
-  subcomponents: { 'Item': Item },
+  subcomponents: { 'Item': Item as React.ComponentType<any> },
   decorators: [
     (Story) => (
       <div style={{ width: '550px' }}>
@@ -98,7 +98,7 @@ export const BRegForm = (args) => {
         >
           <input type="checkbox"/>
         </Item>
-        <span className="agree-text">注册即代表你同意<a href='#'>用户协议</a></span>
+        <span className="agree-text">注册即代表你同意<a href='#!' onClick={(e) => e.preventDefault()}>用户协议</a></span>
       </div>
       <div className='viking-form-submit-area'>
         <Button type="submit" btnType='primary'>登陆</Button>
@@ -137,7 +137,7 @@ export const CFullForm = (args) => {
         >
           <input type="checkbox"/>
         </Item>
-        <span className="agree-text">注册即代表你同意<a href='#'>用户协议</a></span>
+        <span className="agree-text">注册即代表你同意<a href='#!' onClick={(e) => e.preventDefault()}>用户协议</a></span>
       </div>
       <div className='viking-form-submit-area'>
         <Button type="submit" btnType='primary'>登陆 {isSubmitting ? '验证中' : '验证完毕'} {isValid ? '通过😄' : '没通过😢'} </Button>
